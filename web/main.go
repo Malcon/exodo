@@ -11,7 +11,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	port := 80
-	http.HandleFunc("/dashboard", handler)
+	http.HandleFunc("/", handler)
 	
     http.ListenAndServe(fmt.Sprintf("0.0.0.0:%d",port), nil)
 }
